@@ -1,3 +1,91 @@
 .header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: black;
-};
+}
+
+.header-tittle {
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu {
+    position: absolute;
+}
+
+.c-header__nav-btn {
+    display: block;
+    align-items: center;
+    flex-shrink: 0;
+    outline: none;
+    cursor: pointer;
+    transition-property: opacity,filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    box-sizing: content-box;
+    transition: background-color .3s;
+    z-index: 1;
+    }
+
+    .hamburger-box {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        top: 50%;
+        left: 12px;
+    }
+
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+        width: 24px;
+        height: 2px;
+        background-color: #acacac;
+        border-radius: 2px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: .15s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-inner::before {
+        display: block;
+        content: '';
+        width: 24px;
+        height: 2px;
+        top: -7px;
+        background-color: #acacac;
+        border-radius: 2px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: .15s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-inner::after {
+        display: block;
+        content: '';
+        bottom: -7px;
+        width: 24px;
+        height: 2px;
+        background-color: #acacac;
+        border-radius: 2px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: .15s;
+        transition-timing-function: ease;
+    }
