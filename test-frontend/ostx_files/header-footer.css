@@ -1,8 +1,6 @@
+/* ------------header -------------- */
+
 .header {
-    /* padding-top: 10px;
-    padding-bottom: 20px; */
-    /* display: flex;
-    justify-content: space-between; */
     background-color: black;
 }
 
@@ -110,6 +108,7 @@
         padding-bottom: 12px;
         padding-left: 30px;
         padding-right: 30px;
+        z-index: 3;
     }
 
     .c-nav__item {
@@ -191,3 +190,88 @@
         text-transform: uppercase;
         font-family: Montserrat,sans-serif;
     }
+
+    .life-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .life-list-item {
+        max-width: 80px;
+    }
+
+    .list-item-link {
+        font-family: Figtree-Regular,sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+     
+        color: #fff;
+        text-transform: none;
+        position: relative;
+        white-space: break-spaces;
+    }
+
+    .share-link-nav {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        margin-top: 10px;
+        padding: 20px 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        }
+
+    .share-title {
+        white-space: nowrap;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: inherit;
+        font-style: normal;
+        letter-spacing: inherit;
+        margin: 0;
+        text-align: inherit;
+    }
+
+    .share__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+      
+        padding: 0;
+        margin: 0;
+    }
+
+    .c-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width: 24px;
+        color: #767676;
+    }
+
+    .politic-nav {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .politic-link {
+        font-family: Figtree-Regular,sans-serif;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: underline;
+        ::after {
+            content: "|";
+            padding: 0 5px;
+            font-family: Figtree-Regular,sans-serif;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+/* ------------header end -------------- */
+    
