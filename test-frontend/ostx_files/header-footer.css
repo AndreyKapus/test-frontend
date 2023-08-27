@@ -5,11 +5,12 @@
 }
 
 .header-tittle {
+    display: flex;
     margin: 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    
 }
 
 .header-menu {
@@ -124,6 +125,17 @@
         white-space: pre;
         color: #fff;
         display: inline-block;
+        
+    }
+
+    .drop-list-link:hover {
+        text-decoration: underline;
+        color: white;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .drop-list-link:focus {
+        text-decoration: underline;
     }
 
     .list-link-subtitle {
@@ -137,6 +149,24 @@
         position: relative;
         max-width: 182px;
         white-space: break-spaces;
+    }
+
+    .list-link-subtitle:hover {
+        text-decoration: underline;
+        color: white;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .politic-link:hover {
+        text-decoration: underline;
+        color: white;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .media-icon:hover {
+        text-decoration: underline;
+        color: white;
+        transition: color 0.3s ease-in-out;
     }
 
     .is-hidden {
@@ -205,11 +235,16 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-     
         color: #fff;
         text-transform: none;
         position: relative;
         white-space: break-spaces;
+    }
+
+    .list-item-link:hover {
+        text-decoration: underline;
+        color: white;
+        transition: color 0.3s ease-in-out;
     }
 
     .share-link-nav {
@@ -343,7 +378,7 @@
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 6;
-    }
+    };
 }
 
 .c-footer__nav__item {
@@ -354,6 +389,12 @@
     min-width: 144px;
     font-size: 12px;
     color: #e5e5e5;
+    :hover{
+        color: #0dbe98;
+    };
+    :focus{
+        color: #0dbe98;
+    };
 };
 
 .c-footer__copy-top-container {
